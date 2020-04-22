@@ -1,0 +1,1432 @@
+<html lang="ru-ru" style="" class=" no-touchevents"><head>
+<title>Выберите Заявка для изменения | Административный сайт Django</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="stylesheet" type="text/css" href="/static/admin/css/base.d41d8cd98f00.css">
+
+<link rel="stylesheet" type="text/css" href="/static/jet/css/vendor.d793b56e5500.css?v=1.0.6">
+<link rel="stylesheet" type="text/css" href="/static/jet/css/icons/style.232598b5b19c.css?v=1.0.6">
+<link rel="stylesheet" type="text/css" href="/static/jet/css/themes/default/base.6adbe8880da3.css?v=1.0.6" class="base-stylesheet">
+<link rel="stylesheet" type="text/css" href="/static/jet/css/themes/default/select2.theme.c68d63911d39.css?v=1.0.6" class="select2-stylesheet">
+<link rel="stylesheet" type="text/css" href="/static/jet/css/themes/default/jquery-ui.theme.5cf87bfd9791.css?v=1.0.6" class="jquery-ui-stylesheet">
+
+
+  
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/admin.51424c383859.css">
+
+  <link rel="stylesheet" type="text/css" href="/static/admin/css/changelists.d41d8cd98f00.css">
+  
+  
+    <script type="text/javascript" src="/admin/jsi18n/"></script>
+  
+  
+  
+
+
+
+<script type="text/javascript" charset="utf-8">
+    var DATE_FORMAT = "%d.%m.%Y";
+    var TIME_FORMAT = "%H:%M:%S";
+    var DATETIME_FORMAT = "%d.%m.%Y %H:%M:%S";
+</script>
+<script type="text/javascript" src="/jet/jsi18n/"></script>
+<script src="/static/jet/js/build/bundle.min.0e5d53505df5.js?v=1.0.6"></script>
+
+
+
+    <script src="/static/jet/js/i18n/jquery-ui/datepicker-ru.7dfcd097412d.js?v=1.0.6"></script>
+
+    <script src="/static/jet/js/i18n/jquery-ui-timepicker/jquery.ui.timepicker-ru.5ad85c76e802.js?v=1.0.6"></script>
+
+    <script src="/static/jet/js/i18n/select2/ru.f8c138495c99.js?v=1.0.6"></script>
+
+
+
+
+    <script>window.CKEDITOR_BASEPATH = '/static/ckeditor/ckeditor/';</script>
+    
+
+    <style>
+        .dynamic-gallery .field-description textarea {
+            width: 200px;
+            height: 100px;
+        }
+
+        .dynamic-gallery .field-original {
+            max-width: 200px;
+        }
+        .dynamic-gallery .field-original p{
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+
+
+<script type="text/javascript" src="/static/admin/js/core.fd861d43f0f5.js"></script>
+<script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.min.33cabfa15c10.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.init.95b62fa19378.js"></script>
+<script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.d41d8cd98f00.js"></script>
+<script type="text/javascript" src="/static/admin/js/actions.min.f51f04edab28.js"></script>
+<script type="text/javascript" src="/static/admin/js/urlify.411bc3bb651c.js"></script>
+<script type="text/javascript" src="/static/admin/js/prepopulate.min.f4057ebb9b62.js"></script>
+<script type="text/javascript" src="/static/admin/js/vendor/xregexp/xregexp.min.c95393b8ca4d.js"></script>
+
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+
+<body class="menu-pinned  app-request model-request change-list" data-admin-utc-offset="10800">
+
+<!-- Container -->
+<div id="container"><span class="sidebar-container-toggle sidebar-header-menu-icon icon-menu sidebar-toggle"></span>
+
+    
+    <!-- Header -->
+    <div id="header">
+        
+        
+        
+        <div id="user-tools" class="user-tools initialized"><ul class="sidebar-dependent"><li class="user-tools-welcome-msg">Артур</li><li class="user-tools-link"><a href="/">Открыть сайт</a></li><li class="user-tools-link"><a href="/admin/doc/">Документация</a></li><li class="user-tools-link"><a href="/admin/password_change/">Изменить пароль</a></li><li class="user-tools-link"><a href="/admin/logout/">Выйти</a></li></ul></div>
+        
+        
+    </div>
+    <!-- END Header -->
+
+    
+<div class="breadcrumbs initialized">
+<a href="/admin/">Начало</a>
+<span class="icon-arrow-right breadcrumbs-separator"></span> <a href="/admin/request/">Заявки</a>
+<span class="icon-arrow-right breadcrumbs-separator"></span> Заявки
+</div>
+
+    
+
+    
+        
+    
+
+    <!-- Content -->
+    <div id="content" class="flex">
+        
+        <h1>Выберите Заявка для изменения</h1>
+        
+  <div id="content-main">
+    
+  <ul class="object-tools initialized">
+    
+  
+
+
+<li><a href="/admin/request/request/export/?" class="export_link">Экспорт</a></li>
+
+  
+      
+        
+            
+            <li>
+              
+              <a href="/admin/request/request/add/" class="addlink">
+                Добавить Заявка
+              </a>
+            </li>
+            
+          
+      
+    
+
+  </ul>
+
+    
+    <div class="module filtered initialized" id="changelist"><div id="toolbar" class="initialized"><span class="changelist-filter-select-wrapper"><select class="changelist-filter-select select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option data-url="?" selected="selected">Тип заявки</option><option disabled="disabled">---</option><option data-url="?request_type__exact=callback">Помощь в подборе</option><option data-url="?request_type__exact=email">Подписка на новости</option></select><span class="select2 select2-container select2-container--jet" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ml79-container"><span class="select2-selection__rendered" id="select2-ml79-container" title="Тип заявки">Тип заявки</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></span><span class="changelist-filter-select-wrapper"><select class="changelist-filter-select select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option data-url="?" selected="selected">Что интересует</option><option disabled="disabled">---</option><option data-url="?deal_type__exact=sale">продажа</option><option data-url="?deal_type__exact=rent">аренда</option></select><span class="select2 select2-container select2-container--jet" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-p4w2-container"><span class="select2-selection__rendered" id="select2-p4w2-container" title="Что интересует">Что интересует</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></span><span class="changelist-filter-select-wrapper"><select class="changelist-filter-select select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option data-url="?" selected="selected">Время создания</option><option disabled="disabled">---</option><option data-url="?created__gte=2020-04-21+00%3A00%3A00%2B03%3A00&amp;created__lt=2020-04-22+00%3A00%3A00%2B03%3A00">Сегодня</option><option data-url="?created__gte=2020-04-14+00%3A00%3A00%2B03%3A00&amp;created__lt=2020-04-22+00%3A00%3A00%2B03%3A00">Последние 7 дней</option><option data-url="?created__gte=2020-04-01+00%3A00%3A00%2B03%3A00&amp;created__lt=2020-05-01+00%3A00%3A00%2B03%3A00">Этот месяц</option><option data-url="?created__gte=2020-01-01+00%3A00%3A00%2B03%3A00&amp;created__lt=2021-01-01+00%3A00%3A00%2B03%3A00">Этот год</option></select><span class="select2 select2-container select2-container--jet" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-eld7-container"><span class="select2-selection__rendered" id="select2-eld7-container" title="Время создания">Время создания</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></span></div><div class="clear"></div>
+      
+
+
+      
+
+
+      
+        
+          
+        
+      
+
+      <form id="changelist-form" method="post" novalidate=""><input type="hidden" name="csrfmiddlewaretoken" value="YYmodI2dpv8Jmy7zUbNc12RxUveFCfSHezLWaPorAt3Bb1nFzZPUQCrl0gPCYqb5">
+      
+
+      
+          
+
+
+          
+
+
+<div class="results" style="margin-bottom: 104px;">
+<table id="result_list">
+<thead>
+<tr>
+
+<th scope="col" class="action-checkbox-column">
+   
+   <div class="text"><span><input type="checkbox" id="action-toggle" style="display: inline-block;"><label for="action-toggle"></label></span></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="column-__str__">
+   
+   <div class="text"><span>Заявка</span></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-request_type">
+   
+     
+   
+   <div class="text"><a href="?o=2.-10">Тип заявки</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-name">
+   
+     
+   
+   <div class="text"><a href="?o=3.-10">Имя</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-phone">
+   
+     
+   
+   <div class="text"><a href="?o=4.-10">Телефон</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-email">
+   
+     
+   
+   <div class="text"><a href="?o=5.-10">Email</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-deal_type">
+   
+     
+   
+   <div class="text"><a href="?o=6.-10">Что интересует</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-time">
+   
+     
+   
+   <div class="text"><a href="?o=7.-10">Время звонка</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-realty_object">
+   
+     
+   
+   <div class="text"><a href="?o=8.-10">Объект недвижимости</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-village">
+   
+     
+   
+   <div class="text"><a href="?o=9.-10">Поселок</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-created sorted descending">
+   
+     
+       <div class="sortoptions">
+         <a class="sortremove" href="?o=" title="Удалить из сортировки"></a>
+         
+         <a href="?o=10" class="toggle descending" title="Сортировать в другом направлении"></a>
+       </div>
+     
+   
+   <div class="text"><a href="?o=10">Время создания</a></div>
+   <div class="clear"></div>
+</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7145" class="action-select" id="unique_checkbox_id_0"><label for="unique_checkbox_id_0"></label></td><th class="field-__str__"><a href="/admin/request/request/7145/change/">7145</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">glavnaya_test@test.test</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:32</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7144" class="action-select" id="unique_checkbox_id_1"><label for="unique_checkbox_id_1"></label></td><th class="field-__str__"><a href="/admin/request/request/7144/change/">7144</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">test_apartment_3</td><td class="field-phone">+7 (978) 025-8808</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РТВ-927: Апартаменты в центре Москвы</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:32</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7143" class="action-select" id="unique_checkbox_id_2"><label for="unique_checkbox_id_2"></label></td><th class="field-__str__"><a href="/admin/request/request/7143/change/">7143</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">test_apartment_2</td><td class="field-phone">+7 (978) 025-8808</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РТВ-927: Апартаменты в центре Москвы</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:32</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7142" class="action-select" id="unique_checkbox_id_3"><label for="unique_checkbox_id_3"></label></td><th class="field-__str__"><a href="/admin/request/request/7142/change/">7142</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">test_apartment_1</td><td class="field-phone">+7 (978) 025-8808</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РТВ-927: Апартаменты в центре Москвы</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:32</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7141" class="action-select" id="unique_checkbox_id_4"><label for="unique_checkbox_id_4"></label></td><th class="field-__str__"><a href="/admin/request/request/7141/change/">7141</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">doma_test@test.test</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:32</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7140" class="action-select" id="unique_checkbox_id_5"><label for="unique_checkbox_id_5"></label></td><th class="field-__str__"><a href="/admin/request/request/7140/change/">7140</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">poselki_test@test.test</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:32</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7139" class="action-select" id="unique_checkbox_id_6"><label for="unique_checkbox_id_6"></label></td><th class="field-__str__"><a href="/admin/request/request/7139/change/">7139</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">test_vposelke2</td><td class="field-phone">+7 (978) 025-8808</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">Лион</td><td class="field-created nowrap">21 апреля 2020 г. 11:32</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7138" class="action-select" id="unique_checkbox_id_7"><label for="unique_checkbox_id_7"></label></td><th class="field-__str__"><a href="/admin/request/request/7138/change/">7138</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">test_vposelke1</td><td class="field-phone">+7 (978) 025-8808</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">Конус</td><td class="field-created nowrap">21 апреля 2020 г. 11:32</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7137" class="action-select" id="unique_checkbox_id_8"><label for="unique_checkbox_id_8"></label></td><th class="field-__str__"><a href="/admin/request/request/7137/change/">7137</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">test_favorite</td><td class="field-phone">+7 (978) 025-8808</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЛИП-027: Особняк в современном стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:32</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7136" class="action-select" id="unique_checkbox_id_9"><label for="unique_checkbox_id_9"></label></td><th class="field-__str__"><a href="/admin/request/request/7136/change/">7136</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">TEST ZHK-2</td><td class="field-phone">+7 (978) 025-8808</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">ЖК "Резиденция Тверская"</td><td class="field-created nowrap">21 апреля 2020 г. 11:31</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7135" class="action-select" id="unique_checkbox_id_10"><label for="unique_checkbox_id_10"></label></td><th class="field-__str__"><a href="/admin/request/request/7135/change/">7135</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">TEST ZHK-1</td><td class="field-phone">+7 (978) 025-8808</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">ЖК "Резиденция Тверская"</td><td class="field-created nowrap">21 апреля 2020 г. 11:31</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7134" class="action-select" id="unique_checkbox_id_11"><label for="unique_checkbox_id_11"></label></td><th class="field-__str__"><a href="/admin/request/request/7134/change/">7134</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">kontakty_test@test.test</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:31</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7133" class="action-select" id="unique_checkbox_id_12"><label for="unique_checkbox_id_12"></label></td><th class="field-__str__"><a href="/admin/request/request/7133/change/">7133</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">test_header</td><td class="field-phone">+7 (978) 025-8808</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:31</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7132" class="action-select" id="unique_checkbox_id_13"><label for="unique_checkbox_id_13"></label></td><th class="field-__str__"><a href="/admin/request/request/7132/change/">7132</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">test_house_2</td><td class="field-phone">+7 (978) 025-8808</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЛИП-027: Особняк в современном стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:31</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7131" class="action-select" id="unique_checkbox_id_14"><label for="unique_checkbox_id_14"></label></td><th class="field-__str__"><a href="/admin/request/request/7131/change/">7131</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">test_house_1</td><td class="field-phone">+7 (978) 025-8808</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЛИП-027: Особняк в современном стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:31</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7130" class="action-select" id="unique_checkbox_id_15"><label for="unique_checkbox_id_15"></label></td><th class="field-__str__"><a href="/admin/request/request/7130/change/">7130</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">vnutridoma_test@test.test</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:31</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7129" class="action-select" id="unique_checkbox_id_16"><label for="unique_checkbox_id_16"></label></td><th class="field-__str__"><a href="/admin/request/request/7129/change/">7129</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">vnutriposelka_test@test.test</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:31</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7128" class="action-select" id="unique_checkbox_id_17"><label for="unique_checkbox_id_17"></label></td><th class="field-__str__"><a href="/admin/request/request/7128/change/">7128</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">test_header</td><td class="field-phone">+7 (978) 025-8808</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:22</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7127" class="action-select" id="unique_checkbox_id_18"><label for="unique_checkbox_id_18"></label></td><th class="field-__str__"><a href="/admin/request/request/7127/change/">7127</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Лев</td><td class="field-phone">+7 (909) 900-3313</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 11:12</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7126" class="action-select" id="unique_checkbox_id_19"><label for="unique_checkbox_id_19"></label></td><th class="field-__str__"><a href="/admin/request/request/7126/change/">7126</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Ordek</td><td class="field-phone">+7 (926) 530-3300</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID АГЛ-05: Просторная квартира с двумя спальнями</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 10:30</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7125" class="action-select" id="unique_checkbox_id_20"><label for="unique_checkbox_id_20"></label></td><th class="field-__str__"><a href="/admin/request/request/7125/change/">7125</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Андрей Анатольевич</td><td class="field-phone">+7 (985) 277-2777</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЧЕС-6-079: Двухэтажный дом рядом с озером</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 10:26</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7124" class="action-select" id="unique_checkbox_id_21"><label for="unique_checkbox_id_21"></label></td><th class="field-__str__"><a href="/admin/request/request/7124/change/">7124</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Ксения</td><td class="field-phone">+7 (919) 776-4399</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РЕН-051: Неоклассический особняк на лесном участке</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 10:14</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7123" class="action-select" id="unique_checkbox_id_22"><label for="unique_checkbox_id_22"></label></td><th class="field-__str__"><a href="/admin/request/request/7123/change/">7123</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Апти</td><td class="field-phone">+7 (924) 130-0011</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЧЕС-5-037: Участок в центре поселка</td><td class="field-village nowrap">-</td><td class="field-created nowrap">21 апреля 2020 г. 8:20</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7122" class="action-select" id="unique_checkbox_id_23"><label for="unique_checkbox_id_23"></label></td><th class="field-__str__"><a href="/admin/request/request/7122/change/">7122</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Анатолий</td><td class="field-phone">+7 (903) 621-5004</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID Простор-063: Двухэтажный дом в современном стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">20 апреля 2020 г. 22:05</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7121" class="action-select" id="unique_checkbox_id_24"><label for="unique_checkbox_id_24"></label></td><th class="field-__str__"><a href="/admin/request/request/7121/change/">7121</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Евгений</td><td class="field-phone">+7 (916) 739-0319</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID СПК-5-031: Дом в современном стиле у леса</td><td class="field-village nowrap">-</td><td class="field-created nowrap">20 апреля 2020 г. 21:25</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7120" class="action-select" id="unique_checkbox_id_25"><label for="unique_checkbox_id_25"></label></td><th class="field-__str__"><a href="/admin/request/request/7120/change/">7120</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Александр</td><td class="field-phone">+7 (926) 614-4555</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЧЕС-1-022: Особняк в стиле современной классики</td><td class="field-village nowrap">-</td><td class="field-created nowrap">20 апреля 2020 г. 18:26</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7119" class="action-select" id="unique_checkbox_id_26"><label for="unique_checkbox_id_26"></label></td><th class="field-__str__"><a href="/admin/request/request/7119/change/">7119</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Валерия</td><td class="field-phone">+7 (915) 427-9955</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ПСК-097: Просторный особняк с большой террасой</td><td class="field-village nowrap">-</td><td class="field-created nowrap">20 апреля 2020 г. 13:00</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7118" class="action-select" id="unique_checkbox_id_27"><label for="unique_checkbox_id_27"></label></td><th class="field-__str__"><a href="/admin/request/request/7118/change/">7118</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Сергей</td><td class="field-phone">+7 (999) 976-5531</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID НВР-358: Дом рядом с парком и озером</td><td class="field-village nowrap">-</td><td class="field-created nowrap">20 апреля 2020 г. 11:37</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7117" class="action-select" id="unique_checkbox_id_28"><label for="unique_checkbox_id_28"></label></td><th class="field-__str__"><a href="/admin/request/request/7117/change/">7117</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Амина</td><td class="field-phone">+7 (903) 584-9387</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЛИП-134: Особняк с видом на лес</td><td class="field-village nowrap">-</td><td class="field-created nowrap">20 апреля 2020 г. 10:55</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7116" class="action-select" id="unique_checkbox_id_29"><label for="unique_checkbox_id_29"></label></td><th class="field-__str__"><a href="/admin/request/request/7116/change/">7116</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Зайнаф</td><td class="field-phone">+7 (916) 936-6191</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID АГЛ-05: Просторная квартира с двумя спальнями</td><td class="field-village nowrap">-</td><td class="field-created nowrap">20 апреля 2020 г. 10:29</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7115" class="action-select" id="unique_checkbox_id_30"><label for="unique_checkbox_id_30"></label></td><th class="field-__str__"><a href="/admin/request/request/7115/change/">7115</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">devish@yandex.ru</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">20 апреля 2020 г. 10:20</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7114" class="action-select" id="unique_checkbox_id_31"><label for="unique_checkbox_id_31"></label></td><th class="field-__str__"><a href="/admin/request/request/7114/change/">7114</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Ольга</td><td class="field-phone">+7 (903) 743-2303</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">Agalarov Estate</td><td class="field-created nowrap">20 апреля 2020 г. 10:17</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7113" class="action-select" id="unique_checkbox_id_32"><label for="unique_checkbox_id_32"></label></td><th class="field-__str__"><a href="/admin/request/request/7113/change/">7113</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">dzabir68@mail.ru</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">20 апреля 2020 г. 10:14</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7112" class="action-select" id="unique_checkbox_id_33"><label for="unique_checkbox_id_33"></label></td><th class="field-__str__"><a href="/admin/request/request/7112/change/">7112</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">irina</td><td class="field-phone">+7 (926) 865-8788</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РЕН-039: Особняк в неоклассическом стиле рядом с озером</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 23:17</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7111" class="action-select" id="unique_checkbox_id_34"><label for="unique_checkbox_id_34"></label></td><th class="field-__str__"><a href="/admin/request/request/7111/change/">7111</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Кабир</td><td class="field-phone">+7 (909) 552-4677</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РЗД-2656: Особняк в английском стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 22:30</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7110" class="action-select" id="unique_checkbox_id_35"><label for="unique_checkbox_id_35"></label></td><th class="field-__str__"><a href="/admin/request/request/7110/change/">7110</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Кабир</td><td class="field-phone">+7 (909) 552-4677</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЧЕС-1-008: Загородный дом</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 22:21</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7109" class="action-select" id="unique_checkbox_id_36"><label for="unique_checkbox_id_36"></label></td><th class="field-__str__"><a href="/admin/request/request/7109/change/">7109</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Кабир Курбанов</td><td class="field-phone">+7 (909) 552-4677</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЧЕС 2-015б: Дом в средиземноморском стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 22:17</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7108" class="action-select" id="unique_checkbox_id_37"><label for="unique_checkbox_id_37"></label></td><th class="field-__str__"><a href="/admin/request/request/7108/change/">7108</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Кабир Курбанлв</td><td class="field-phone">+7 (909) 552-4677</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЧЕС-6-025: Дом в классическом стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 22:12</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7107" class="action-select" id="unique_checkbox_id_38"><label for="unique_checkbox_id_38"></label></td><th class="field-__str__"><a href="/admin/request/request/7107/change/">7107</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">test000</td><td class="field-phone">+7 (111) 111-1111</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">Новорижский</td><td class="field-created nowrap">19 апреля 2020 г. 20:34</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7106" class="action-select" id="unique_checkbox_id_39"><label for="unique_checkbox_id_39"></label></td><th class="field-__str__"><a href="/admin/request/request/7106/change/">7106</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Екатерина Васильевна</td><td class="field-phone">+7 (966) 193-5185</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЛИП-168: Шале с видом на озеро</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 19:20</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7105" class="action-select" id="unique_checkbox_id_40"><label for="unique_checkbox_id_40"></label></td><th class="field-__str__"><a href="/admin/request/request/7105/change/">7105</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">test</td><td class="field-phone">+7 (000) 000-0000</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">Новорижский</td><td class="field-created nowrap">19 апреля 2020 г. 19:10</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7104" class="action-select" id="unique_checkbox_id_41"><label for="unique_checkbox_id_41"></label></td><th class="field-__str__"><a href="/admin/request/request/7104/change/">7104</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Margo Vorro</td><td class="field-phone">+7 (925) 188-1045</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РЕН-177: Особняк с лаунж-зоной на крыше</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 19:03</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7103" class="action-select" id="unique_checkbox_id_42"><label for="unique_checkbox_id_42"></label></td><th class="field-__str__"><a href="/admin/request/request/7103/change/">7103</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Яна</td><td class="field-phone">+7 (916) 686-2013</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЧЕС-7-052а: Особняк с видом на канал</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 18:15</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7102" class="action-select" id="unique_checkbox_id_43"><label for="unique_checkbox_id_43"></label></td><th class="field-__str__"><a href="/admin/request/request/7102/change/">7102</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Екатерина Лагуновская</td><td class="field-phone">+7 (993) 235-0877</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РХ-04: Особняк с эффектной геометрией фасада</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 15:03</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7101" class="action-select" id="unique_checkbox_id_44"><label for="unique_checkbox_id_44"></label></td><th class="field-__str__"><a href="/admin/request/request/7101/change/">7101</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">АСАН</td><td class="field-phone">+7 (985) 233-9193</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID СПК-1-025: Дом со spa-зоной и тренажерным залом</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 13:26</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7100" class="action-select" id="unique_checkbox_id_45"><label for="unique_checkbox_id_45"></label></td><th class="field-__str__"><a href="/admin/request/request/7100/change/">7100</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Арутюн Сергеевич</td><td class="field-phone">+7 (989) 854-8888</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">Agalarov Estate</td><td class="field-created nowrap">19 апреля 2020 г. 13:15</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7099" class="action-select" id="unique_checkbox_id_46"><label for="unique_checkbox_id_46"></label></td><th class="field-__str__"><a href="/admin/request/request/7099/change/">7099</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Инесса Александровна</td><td class="field-phone">+8 (926) 220-1378</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РЕН-052: Дом в современном стиле по технологии фахверк</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 10:50</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7098" class="action-select" id="unique_checkbox_id_47"><label for="unique_checkbox_id_47"></label></td><th class="field-__str__"><a href="/admin/request/request/7098/change/">7098</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Инесса Александровна</td><td class="field-phone">+7 (926) 220-1378</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID СПК-5-009а: Особняк с 50-метровой террасой в окружении берез</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 10:30</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7097" class="action-select" id="unique_checkbox_id_48"><label for="unique_checkbox_id_48"></label></td><th class="field-__str__"><a href="/admin/request/request/7097/change/">7097</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Иван</td><td class="field-phone">+7 (985) 776-9112</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">Райт Хиллс</td><td class="field-created nowrap">19 апреля 2020 г. 10:29</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7096" class="action-select" id="unique_checkbox_id_49"><label for="unique_checkbox_id_49"></label></td><th class="field-__str__"><a href="/admin/request/request/7096/change/">7096</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Эмилия</td><td class="field-phone">+7 (905) 327-7989</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РЕН-051: Неоклассический особняк на лесном участке</td><td class="field-village nowrap">-</td><td class="field-created nowrap">19 апреля 2020 г. 0:17</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7095" class="action-select" id="unique_checkbox_id_50"><label for="unique_checkbox_id_50"></label></td><th class="field-__str__"><a href="/admin/request/request/7095/change/">7095</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Виктор Александрович</td><td class="field-phone">+7 (902) 990-4770</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID АГЛ-10: Квартира с камином в Agalarov Estate</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 19:49</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7094" class="action-select" id="unique_checkbox_id_51"><label for="unique_checkbox_id_51"></label></td><th class="field-__str__"><a href="/admin/request/request/7094/change/">7094</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Леван</td><td class="field-phone">+7 (926) 313-3600</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID НВР-214: Современное деревянное шале с дизайнерским ремонтом под ключ с мебелью</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 18:10</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7093" class="action-select" id="unique_checkbox_id_52"><label for="unique_checkbox_id_52"></label></td><th class="field-__str__"><a href="/admin/request/request/7093/change/">7093</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Денис</td><td class="field-phone">+7 (915) 130-1312</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ПСК-097: Просторный особняк с большой террасой</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 17:25</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7092" class="action-select" id="unique_checkbox_id_53"><label for="unique_checkbox_id_53"></label></td><th class="field-__str__"><a href="/admin/request/request/7092/change/">7092</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Артур</td><td class="field-phone">+7 (978) 756-9118</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID НИК-198: Неоклассический особняк с террасой и балконами</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 15:42</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7088" class="action-select" id="unique_checkbox_id_54"><label for="unique_checkbox_id_54"></label></td><th class="field-__str__"><a href="/admin/request/request/7088/change/">7088</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">a9272727@gmail.com</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 15:05</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7085" class="action-select" id="unique_checkbox_id_55"><label for="unique_checkbox_id_55"></label></td><th class="field-__str__"><a href="/admin/request/request/7085/change/">7085</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Джавдат Сабирович</td><td class="field-phone">+7 (903) 729-0977</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID АРТЭ-13: Дом в современном стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 14:16</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7084" class="action-select" id="unique_checkbox_id_56"><label for="unique_checkbox_id_56"></label></td><th class="field-__str__"><a href="/admin/request/request/7084/change/">7084</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Андрей</td><td class="field-phone">+7 (968) 492-4705</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЛИП-051: Участок в центре поселка</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 14:09</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7083" class="action-select" id="unique_checkbox_id_57"><label for="unique_checkbox_id_57"></label></td><th class="field-__str__"><a href="/admin/request/request/7083/change/">7083</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Анна Кондратьева</td><td class="field-phone">+7 (916) 638-6444</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID МОН-06: Загородная резиденция</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 13:36</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7082" class="action-select" id="unique_checkbox_id_58"><label for="unique_checkbox_id_58"></label></td><th class="field-__str__"><a href="/admin/request/request/7082/change/">7082</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">suzi.1969@mail.ru</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 11:46</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7081" class="action-select" id="unique_checkbox_id_59"><label for="unique_checkbox_id_59"></label></td><th class="field-__str__"><a href="/admin/request/request/7081/change/">7081</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Владимир</td><td class="field-phone">+7 (903) 725-1132</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ПСК-278а: Загородный участок</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 10:53</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7080" class="action-select" id="unique_checkbox_id_60"><label for="unique_checkbox_id_60"></label></td><th class="field-__str__"><a href="/admin/request/request/7080/change/">7080</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">владимир</td><td class="field-phone">+7 (903) 725-1132</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЧЕС-1-022: Особняк в стиле современной классики</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 10:41</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7079" class="action-select" id="unique_checkbox_id_61"><label for="unique_checkbox_id_61"></label></td><th class="field-__str__"><a href="/admin/request/request/7079/change/">7079</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Владимир</td><td class="field-phone">+7 (903) 725-1132</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID БАЛ-02: Загородный дом</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 10:38</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7078" class="action-select" id="unique_checkbox_id_62"><label for="unique_checkbox_id_62"></label></td><th class="field-__str__"><a href="/admin/request/request/7078/change/">7078</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Татьяна</td><td class="field-phone">+7 (917) 419-9428</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID УЛ-02: Лесной участок с реликтовыми соснами и елями</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 9:47</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7077" class="action-select" id="unique_checkbox_id_63"><label for="unique_checkbox_id_63"></label></td><th class="field-__str__"><a href="/admin/request/request/7077/change/">7077</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">valerijbel@list.ru</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">18 апреля 2020 г. 9:32</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7076" class="action-select" id="unique_checkbox_id_64"><label for="unique_checkbox_id_64"></label></td><th class="field-__str__"><a href="/admin/request/request/7076/change/">7076</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">jul.kondrahina@yandex.ru</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 23:44</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7075" class="action-select" id="unique_checkbox_id_65"><label for="unique_checkbox_id_65"></label></td><th class="field-__str__"><a href="/admin/request/request/7075/change/">7075</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">osher878@gmail.com</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 23:24</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7074" class="action-select" id="unique_checkbox_id_66"><label for="unique_checkbox_id_66"></label></td><th class="field-__str__"><a href="/admin/request/request/7074/change/">7074</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Виктор</td><td class="field-phone">+7 (977) 961-3283</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID МОН-06: Загородная резиденция</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 20:45</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7073" class="action-select" id="unique_checkbox_id_67"><label for="unique_checkbox_id_67"></label></td><th class="field-__str__"><a href="/admin/request/request/7073/change/">7073</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Борис</td><td class="field-phone">+7 (922) 117-6464</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID СПК-3-025а: Особняк в современном стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 19:44</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7072" class="action-select" id="unique_checkbox_id_68"><label for="unique_checkbox_id_68"></label></td><th class="field-__str__"><a href="/admin/request/request/7072/change/">7072</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Анна</td><td class="field-phone">+7 (916) 160-2297</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID НВР-214: Современное деревянное шале с дизайнерским ремонтом под ключ с мебелью</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 16:16</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7071" class="action-select" id="unique_checkbox_id_69"><label for="unique_checkbox_id_69"></label></td><th class="field-__str__"><a href="/admin/request/request/7071/change/">7071</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Павел</td><td class="field-phone">+7 (926) 291-2287</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID НВР-306: Банный комплекс в современном стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 15:35</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7070" class="action-select" id="unique_checkbox_id_70"><label for="unique_checkbox_id_70"></label></td><th class="field-__str__"><a href="/admin/request/request/7070/change/">7070</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">iraidakhaliulina7e6@yandex.ru</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 12:55</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7069" class="action-select" id="unique_checkbox_id_71"><label for="unique_checkbox_id_71"></label></td><th class="field-__str__"><a href="/admin/request/request/7069/change/">7069</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Рустем</td><td class="field-phone">+7 (926) 219-0033</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЛИП-168: Шале с видом на озеро</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 12:26</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7068" class="action-select" id="unique_checkbox_id_72"><label for="unique_checkbox_id_72"></label></td><th class="field-__str__"><a href="/admin/request/request/7068/change/">7068</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Тамара</td><td class="field-phone">+7 (985) 262-1501</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID СПК-5-031: Дом в современном стиле у леса</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 12:06</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7067" class="action-select" id="unique_checkbox_id_73"><label for="unique_checkbox_id_73"></label></td><th class="field-__str__"><a href="/admin/request/request/7067/change/">7067</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Максим Даниилович</td><td class="field-phone">+7 (926) 598-1161</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID СПК-5-031: Дом в современном стиле у леса</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 11:22</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7066" class="action-select" id="unique_checkbox_id_74"><label for="unique_checkbox_id_74"></label></td><th class="field-__str__"><a href="/admin/request/request/7066/change/">7066</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Маргарита</td><td class="field-phone">+7 (909) 669-9981</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID Простор-121: Двухэтажный дом в современном стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 10:49</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7065" class="action-select" id="unique_checkbox_id_75"><label for="unique_checkbox_id_75"></label></td><th class="field-__str__"><a href="/admin/request/request/7065/change/">7065</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Вероника</td><td class="field-phone">+7 (926) 132-9531</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID НИЛ-09: Дом в стиле альпийского шале</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 9:08</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7064" class="action-select" id="unique_checkbox_id_76"><label for="unique_checkbox_id_76"></label></td><th class="field-__str__"><a href="/admin/request/request/7064/change/">7064</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Лилия</td><td class="field-phone">+7 (916) 326-1499</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID АГЛ-09: Квартира с камином в поместье</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 8:56</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7063" class="action-select" id="unique_checkbox_id_77"><label for="unique_checkbox_id_77"></label></td><th class="field-__str__"><a href="/admin/request/request/7063/change/">7063</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">ивана</td><td class="field-phone">+7 (916) 182-2752</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID МЛК-01: Двухэтажный дом из клеёного бруса</td><td class="field-village nowrap">-</td><td class="field-created nowrap">17 апреля 2020 г. 0:11</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7062" class="action-select" id="unique_checkbox_id_78"><label for="unique_checkbox_id_78"></label></td><th class="field-__str__"><a href="/admin/request/request/7062/change/">7062</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">роман</td><td class="field-phone">+7 (985) 919-0909</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЛИП-168: Шале с видом на озеро</td><td class="field-village nowrap">-</td><td class="field-created nowrap">16 апреля 2020 г. 20:30</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7061" class="action-select" id="unique_checkbox_id_79"><label for="unique_checkbox_id_79"></label></td><th class="field-__str__"><a href="/admin/request/request/7061/change/">7061</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">иван петров</td><td class="field-phone">+7 (924) 037-1874</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЧЕС-4-070: Загородный дом в Средиземноморском стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">16 апреля 2020 г. 18:02</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7060" class="action-select" id="unique_checkbox_id_80"><label for="unique_checkbox_id_80"></label></td><th class="field-__str__"><a href="/admin/request/request/7060/change/">7060</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">иван петров</td><td class="field-phone">+7 (924) 037-1874</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЧЕС-4-070: Загородный дом в Средиземноморском стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">16 апреля 2020 г. 18:02</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7059" class="action-select" id="unique_checkbox_id_81"><label for="unique_checkbox_id_81"></label></td><th class="field-__str__"><a href="/admin/request/request/7059/change/">7059</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Артём</td><td class="field-phone">+7 (903) 616-8292</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РЕН-052: Дом в современном стиле по технологии фахверк</td><td class="field-village nowrap">-</td><td class="field-created nowrap">16 апреля 2020 г. 15:39</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7058" class="action-select" id="unique_checkbox_id_82"><label for="unique_checkbox_id_82"></label></td><th class="field-__str__"><a href="/admin/request/request/7058/change/">7058</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">роман</td><td class="field-phone">+7 (985) 919-0909</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ПОК-3-020: Особняк в средиземноморском стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">16 апреля 2020 г. 14:58</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7057" class="action-select" id="unique_checkbox_id_83"><label for="unique_checkbox_id_83"></label></td><th class="field-__str__"><a href="/admin/request/request/7057/change/">7057</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Ангелина</td><td class="field-phone">+7 (926) 120-8484</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID СПК-3-015: Особняк с видом на реку и парк</td><td class="field-village nowrap">-</td><td class="field-created nowrap">16 апреля 2020 г. 14:22</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7056" class="action-select" id="unique_checkbox_id_84"><label for="unique_checkbox_id_84"></label></td><th class="field-__str__"><a href="/admin/request/request/7056/change/">7056</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">89615517717</td><td class="field-phone">+7 (961) 551-7717</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РФМ-019: Загородный участок</td><td class="field-village nowrap">-</td><td class="field-created nowrap">16 апреля 2020 г. 14:10</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7055" class="action-select" id="unique_checkbox_id_85"><label for="unique_checkbox_id_85"></label></td><th class="field-__str__"><a href="/admin/request/request/7055/change/">7055</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Зуля</td><td class="field-phone">+7 (961) 551-7717</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЗД-01: Загородный дом</td><td class="field-village nowrap">-</td><td class="field-created nowrap">16 апреля 2020 г. 14:07</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7054" class="action-select" id="unique_checkbox_id_86"><label for="unique_checkbox_id_86"></label></td><th class="field-__str__"><a href="/admin/request/request/7054/change/">7054</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Роман</td><td class="field-phone">+7 (925) 504-7481</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ЧЕС-1-022: Особняк в стиле современной классики</td><td class="field-village nowrap">-</td><td class="field-created nowrap">16 апреля 2020 г. 11:12</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7053" class="action-select" id="unique_checkbox_id_87"><label for="unique_checkbox_id_87"></label></td><th class="field-__str__"><a href="/admin/request/request/7053/change/">7053</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">евгений</td><td class="field-phone">+8 (919) 368-1344</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID СПК-5-031: Дом в современном стиле у леса</td><td class="field-village nowrap">-</td><td class="field-created nowrap">16 апреля 2020 г. 11:03</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7052" class="action-select" id="unique_checkbox_id_88"><label for="unique_checkbox_id_88"></label></td><th class="field-__str__"><a href="/admin/request/request/7052/change/">7052</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">viptrans74@mail.ru</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">16 апреля 2020 г. 10:25</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7051" class="action-select" id="unique_checkbox_id_89"><label for="unique_checkbox_id_89"></label></td><th class="field-__str__"><a href="/admin/request/request/7051/change/">7051</a></th><td class="field-request_type">Подписка на новости</td><td class="field-name">-</td><td class="field-phone">-</td><td class="field-email">jbi-komplekt@mail.ru</td><td class="field-deal_type">-</td><td class="field-time">-</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">-</td><td class="field-created nowrap">16 апреля 2020 г. 9:49</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7050" class="action-select" id="unique_checkbox_id_90"><label for="unique_checkbox_id_90"></label></td><th class="field-__str__"><a href="/admin/request/request/7050/change/">7050</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Игорь</td><td class="field-phone">+7 (903) 363-7594</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID НВР-214: Современное деревянное шале с дизайнерским ремонтом под ключ с мебелью</td><td class="field-village nowrap">-</td><td class="field-created nowrap">15 апреля 2020 г. 23:34</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7049" class="action-select" id="unique_checkbox_id_91"><label for="unique_checkbox_id_91"></label></td><th class="field-__str__"><a href="/admin/request/request/7049/change/">7049</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Ольга Иванова</td><td class="field-phone">+7 (916) 241-2747</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID РЕН-015: Двухэтажный дом в классическом стиле</td><td class="field-village nowrap">-</td><td class="field-created nowrap">15 апреля 2020 г. 22:55</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7048" class="action-select" id="unique_checkbox_id_92"><label for="unique_checkbox_id_92"></label></td><th class="field-__str__"><a href="/admin/request/request/7048/change/">7048</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Адрей</td><td class="field-phone">+7 (903) 593-9944</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID СПК-5-031: Дом в современном стиле у леса</td><td class="field-village nowrap">-</td><td class="field-created nowrap">15 апреля 2020 г. 14:15</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7047" class="action-select" id="unique_checkbox_id_93"><label for="unique_checkbox_id_93"></label></td><th class="field-__str__"><a href="/admin/request/request/7047/change/">7047</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">георгий</td><td class="field-phone">+7 (921) 243-0063</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID НВР-358: Дом рядом с парком и озером</td><td class="field-village nowrap">-</td><td class="field-created nowrap">15 апреля 2020 г. 12:58</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7046" class="action-select" id="unique_checkbox_id_94"><label for="unique_checkbox_id_94"></label></td><th class="field-__str__"><a href="/admin/request/request/7046/change/">7046</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Александр</td><td class="field-phone">+7 (903) 188-5187</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID ДВЛ-602: Таунхаус "под ключ" с мебелью в КП "Довиль"</td><td class="field-village nowrap">-</td><td class="field-created nowrap">15 апреля 2020 г. 12:09</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7045" class="action-select" id="unique_checkbox_id_95"><label for="unique_checkbox_id_95"></label></td><th class="field-__str__"><a href="/admin/request/request/7045/change/">7045</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Шах</td><td class="field-phone">+7 (916) 724-6330</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID АГЛ-02: Трехкомнатная квартира на Новой Риге</td><td class="field-village nowrap">-</td><td class="field-created nowrap">15 апреля 2020 г. 11:05</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7044" class="action-select" id="unique_checkbox_id_96"><label for="unique_checkbox_id_96"></label></td><th class="field-__str__"><a href="/admin/request/request/7044/change/">7044</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Георгий</td><td class="field-phone">+7 (911) 557-5900</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID НВР-358: Дом рядом с парком и озером</td><td class="field-village nowrap">-</td><td class="field-created nowrap">15 апреля 2020 г. 10:26</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7043" class="action-select" id="unique_checkbox_id_97"><label for="unique_checkbox_id_97"></label></td><th class="field-__str__"><a href="/admin/request/request/7043/change/">7043</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">игорь</td><td class="field-phone">+7 (913) 820-1133</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">-</td><td class="field-village nowrap">Усово Плюс</td><td class="field-created nowrap">15 апреля 2020 г. 10:04</td></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7042" class="action-select" id="unique_checkbox_id_98"><label for="unique_checkbox_id_98"></label></td><th class="field-__str__"><a href="/admin/request/request/7042/change/">7042</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Софья</td><td class="field-phone">+7 (919) 105-4152</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID НВР-135: Дом напротив озера</td><td class="field-village nowrap">-</td><td class="field-created nowrap">14 апреля 2020 г. 18:34</td></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="7041" class="action-select" id="unique_checkbox_id_99"><label for="unique_checkbox_id_99"></label></td><th class="field-__str__"><a href="/admin/request/request/7041/change/">7041</a></th><td class="field-request_type">Помощь в подборе</td><td class="field-name">Софья</td><td class="field-phone">+7 (919) 105-4152</td><td class="field-email">-</td><td class="field-deal_type">-</td><td class="field-time">&nbsp;</td><td class="field-realty_object nowrap">ID НВР-214: Современное деревянное шале с дизайнерским ремонтом под ключ с мебелью</td><td class="field-village nowrap">-</td><td class="field-created nowrap">14 апреля 2020 г. 18:33</td></tr>
+
+</tbody>
+</table>
+</div>
+
+
+          
+      
+      
+
+<div class="changelist-footer fixed"><div class="actions initialized">
+    <label><select name="action" required="" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+  <option value="" selected="">---------</option>
+
+  <option value="delete_selected">Удалить выбранные Заявки</option>
+
+</select><span class="select2 select2-container select2-container--jet" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-action-ni-container"><span class="select2-selection__rendered" id="select2-action-ni-container" title="---------">---------</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></label><input type="hidden" name="select_across" value="0" class="select-across">
+    <button type="submit" class="button" title="Выполнить выбранное действие" name="index" value="0">Выполнить</button>
+    
+        <div class="labels"><span class="action-counter" data-actions-icnt="100" style="display: inline;">Выбрано 0 объектов из 100 </span><span class="all">Выбраны все 5689</span><span class="question">
+            <a href="#" title="Нажмите здесь, чтобы выбрать объекты на всех страницах">Выбрать все Заявки (5689)</a>
+        </span><span class="clear"><a href="#">Снять выделение</a></span></div>
+        
+        
+        
+        
+        
+    
+</div><p class="paginator initialized"><span class="pages-wrapper"><span class="this-page">1</span><a href="?p=1">2</a><a href="?p=2">3</a><a href="?p=3">4</a><span class="disabled"> 
+
+    ... 
+
+    </span><a href="?p=55">56</a><a href="?p=56" class="end">57</a></span><div class="label">
+
+
+     
+
+
+5689 Заявки
+
+
+</div></p><div class="cf"></div></div>
+
+      </form>
+    </div>
+  </div>
+
+        
+        <br class="clear">
+    </div>
+    <!-- END Content -->
+
+    
+    <div id="footer"></div>
+    <script type="text/javascript" src="/static/js/admin.cc3f35879d89.js"></script>
+
+
+    
+
+    
+    
+
+    
+    
+        <div class="related-popup-container scrollable">
+            <a href="#" class="related-popup-back">
+                <span class="related-popup-back-icon icon-arrow-left"></span>
+                <span class="related-popup-back-label">назад</span>
+            </a>
+            <span class="icon-refresh loading-indicator"></span>
+        </div>
+
+        <div class="sidebar-header-wrapper sidebar-dependent">
+            <div class="sidebar-header sidebar-dependent">
+                <a href="#" class="sidebar-header-menu sidebar-toggle">
+                    <span class="sidebar-header-menu-icon icon-menu"></span>
+                    <span class="sidebar-header-menu-icon icon-cross"></span>
+                </a>
+            </div>
+        </div>
+        <div class="sidebar sidebar-dependent initialized">
+            <div class="sidebar-wrapper scrollable ps-container ps-active-y" data-ps-id="8f79a70d-8aa8-b0bd-fac0-7dff595f6e7d"><div id="branding" class="initialized" style="height: 52px;">
+            <span id="branding-menu" class="sidebar-header-menu-icon icon-menu sidebar-toggle"></span>
+            <span id="branding-pin" class="sidebar-link-icon icon-pin sidebar-pin"></span>
+            
+    <h1 id="site-name">
+        <a href="/admin/">Villagio Realty</a>
+    </h1>
+
+        </div>
+                <div class="sidebar-section">
+                    
+                        <a href="/admin/" class="sidebar-link icon">
+                            <span class="sidebar-link-label">
+                                <span class="sidebar-link-icon icon-data"></span>
+                                Начало
+                            </span>
+                        </a>
+                    
+                    
+                        <a href="/" class="sidebar-link icon">
+                            <span class="sidebar-link-label">
+                                <span class="sidebar-link-icon icon-open-external"></span>
+                                Открыть сайт
+                            </span>
+                        </a>
+                    
+                    
+                    
+                        <a href="/admin/doc/" class="sidebar-link icon">
+                            <span class="sidebar-link-label">
+                                <span class="sidebar-link-icon icon-book"></span>
+                                Документация
+                            </span>
+                        </a>
+                    
+                    
+                </div>
+
+                
+                    
+                    
+                        
+                            
+                                <div class="sidebar-section">
+                                    <div class="sidebar-title">
+                                        <a href="/admin/realty/" class="sidebar-title-link">
+                                            Рабочие вопросы
+                                        </a>
+                                    </div>
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/workflowquestiontype/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Типы рабочих вопросов</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/realtyobjectworkflowquestion/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Рабочие вопросы объектов</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="sidebar-section">
+                                    <div class="sidebar-title">
+                                        <a href="/admin/request/" class="sidebar-title-link">
+                                            Заявки
+                                        </a>
+                                    </div>
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/request/request/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Заявки</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="sidebar-section">
+                                    <div class="sidebar-title">
+                                        <a href="/admin/realty/" class="sidebar-title-link">
+                                            Недвижимость
+                                        </a>
+                                    </div>
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/realtyobject/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Объекты</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/group/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Посёлки / ЖК</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/direction/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Направления / Районы</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/submoscowgroup/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Посёлки (Подмосковье)</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/submoscowlocation/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Направления (Подмосковье)</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/moscowgroup/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">ЖК (Москва)</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/moscowlocation/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Районы (Москва)</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/villagetype/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Типы групп объектов</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/discount/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Скидки</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/tag/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Теги</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/facility/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Инфраструктура</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/facilitytype/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Типы инфраструктуры</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/manager/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Менеджеры</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/realtyobjectmaterial/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Материалы домов</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/realtyobjectstyle/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Стили домов</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/realtyobjectstate/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Состояния домов</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/realtyobjectpaymentoption/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Варианты оплаты</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/realtyobjectpaymentoption/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Варианты оплаты</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/realtyobjectcommunication/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Виды коммуникаций</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/villagestatus/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Статусы посёлков</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/villageterraintype/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Типы местности</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/realty/villagedeveloper/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Застройщики</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/upload_plan" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Загрузка планировок</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="sidebar-section">
+                                    <div class="sidebar-title">
+                                        <a href="/admin/news/" class="sidebar-title-link">
+                                            Новости
+                                        </a>
+                                    </div>
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/news/news/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Новости</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/news/sale/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Распродажа</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="sidebar-section">
+                                    <div class="sidebar-title">
+                                        <a href="/admin/core/" class="sidebar-title-link">
+                                            Главная
+                                        </a>
+                                    </div>
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/core/villagiosite/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Сайт</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/core/index/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Главная</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/core/offer/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Интересные предложения</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="sidebar-section">
+                                    <div class="sidebar-title">
+                                        <a href="/admin/page/" class="sidebar-title-link">
+                                            Страницы
+                                        </a>
+                                    </div>
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/page/page/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Страницы</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/page/header/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Хэдер</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/page/footer/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Футер</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/page/form/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Формы</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="sidebar-section">
+                                    <div class="sidebar-title">
+                                        <a href="/admin/image/" class="sidebar-title-link">
+                                            Изображения
+                                        </a>
+                                    </div>
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/image/image/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Изображения</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/image/watermark/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Водные знаки</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="sidebar-section">
+                                    <div class="sidebar-title">
+                                        <a href="/admin/about/" class="sidebar-title-link">
+                                            О компании
+                                        </a>
+                                    </div>
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/about/office/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Офисы</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/about/contactphone/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Контактные телефоны</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/about/company/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Компания</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="sidebar-section">
+                                    <div class="sidebar-title">
+                                        <a href="/admin/user_assets/" class="sidebar-title-link">
+                                            Пользовательские коды
+                                        </a>
+                                    </div>
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/user_assets/assetgroup/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Группы кодов</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/user_assets/asset/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Коды</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="sidebar-section">
+                                    <div class="sidebar-title">
+                                        <a href="/admin/feedback/" class="sidebar-title-link">
+                                            Обратная связь
+                                        </a>
+                                    </div>
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/feedback/expert/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Эксперты</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/feedback/expertfeedback/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Экспертная оценка</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/feedback/feedback/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Отзывы пользователей</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="sidebar-section">
+                                    <div class="sidebar-title">
+                                        <a href="/admin/stats/" class="sidebar-title-link">
+                                            Статистика
+                                        </a>
+                                    </div>
+                                    
+                                        
+                                            <div>
+                                                <a href="/admin/stats/promologentry/" class="sidebar-link">
+                                                    <span class="sidebar-right">
+                                                        <span class="sidebar-right-arrow icon-arrow-right"></span>
+                                                    </span>
+                                                    <span class="sidebar-link-label">Главные объекты</span>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                    
+
+                    <div class="sidebar-section last">
+                        <div class="dialog-confirm" id="bookmarks-add-dialog" title="Добавить закладку">
+                            <form action="/jet/add_bookmark/" method="POST" id="bookmarks-add-form">
+                                <input type="hidden" name="csrfmiddlewaretoken" value="YYmodI2dpv8Jmy7zUbNc12RxUveFCfSHezLWaPorAt3Bb1nFzZPUQCrl0gPCYqb5">
+                                <p>Название:</p>
+                                <input type="text" name="title" class="fill_width">
+                                <p>URL:</p>
+                                <input type="text" name="url" class="fill_width">
+                            </form>
+                        </div>
+                        <form action="/jet/remove_bookmark/" method="POST" id="bookmarks-remove-form">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="YYmodI2dpv8Jmy7zUbNc12RxUveFCfSHezLWaPorAt3Bb1nFzZPUQCrl0gPCYqb5">
+                            <input type="hidden" name="id">
+                        </form>
+                        <div class="dialog-confirm" id="bookmarks-remove-dialog" title="Удалить закладку">
+                            <p>Вы точно хотите удалить эту закладку?</p>
+                        </div>
+
+                        <div class="sidebar-title">
+                            <span class="sidebar-right">
+                                <a href="#" class="sidebar-right-plus bookmarks-add" title="Добавить закладку" data-title="Выберите Заявка для изменения"><span class="icon-add"></span></a>
+                            </span>
+                            закладки
+                        </div>
+
+                        <div class="bookmarks-list">
+                            
+                            
+                            <a class="sidebar-link bookmark-item clone">
+                                <span class="sidebar-right collapsible">
+                                    <span class="sidebar-right-remove bookmarks-remove">Удалить</span>
+                                </span>
+                                <span class="sidebar-link-label"></span>
+                            </a>
+                        </div>
+                    </div>
+                
+            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 682px; right: 3px;"><div class="ps-scrollbar-y" style="top: 0px; height: 188px;"></div></div></div>
+
+            
+        </div>
+    
+
+    
+    
+</div>
+<!-- END Container -->
+
+
+
+<table class="helper"><thead>
+<tr>
+
+<th scope="col" class="action-checkbox-column" style="width: 18px;"></th>
+<th scope="col" class="column-__str__" style="width: 47px;">
+   
+   <div class="text"><span>Заявка</span></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-request_type" style="width: 76px;">
+   
+     
+   
+   <div class="text"><a href="?o=2.-10">Тип заявки</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-name" style="width: 102px;">
+   
+     
+   
+   <div class="text"><a href="?o=3.-10">Имя</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-phone" style="width: 58px;">
+   
+     
+   
+   <div class="text"><a href="?o=4.-10">Телефон</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-email" style="width: 178px;">
+   
+     
+   
+   <div class="text"><a href="?o=5.-10">Email</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-deal_type" style="width: 108px;">
+   
+     
+   
+   <div class="text"><a href="?o=6.-10">Что интересует</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-time" style="width: 94px;">
+   
+     
+   
+   <div class="text"><a href="?o=7.-10">Время звонка</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-realty_object" style="width: 560px;">
+   
+     
+   
+   <div class="text"><a href="?o=8.-10">Объект недвижимости</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-village" style="width: 164px;">
+   
+     
+   
+   <div class="text"><a href="?o=9.-10">Поселок</a></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" class="sortable column-created sorted descending" style="width: 117px;">
+   
+     
+       <div class="sortoptions">
+         <a class="sortremove" href="?o=" title="Удалить из сортировки"></a>
+         
+         <a href="?o=10" class="toggle descending" title="Сортировать в другом направлении"></a>
+       </div>
+     
+   
+   <div class="text"><a href="?o=10">Время создания</a></div>
+   <div class="clear"></div>
+</th>
+</tr>
+</thead></table><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
