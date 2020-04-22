@@ -12,8 +12,8 @@ public class BeforeTestAdminPanel {
     @Before
     public void loginToAdm (){
         open("https://villagio-vip.ru/admin/request/request/");
-        $(byId("id_username")).setValue("qa");
-        $(byId("id_password")).setValue("Artur8808").pressEnter();
+        $(byId("id_username")).setValue("qa11");
+        $(byId("id_password")).setValue("Artur1").pressEnter();
         $(byLinkText("Заявки")).click();
     }
     @After
